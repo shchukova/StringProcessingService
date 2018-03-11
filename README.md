@@ -46,9 +46,14 @@ ________________________________________________
   1. service/service.php?request='строка запроса', возвращает в ответ обработанную строку
 
 Использование сервиса:
+
     $request = '{"job": {"text": ,  "methods": ""}}';
+
     $sourceType = new SourceType('json');
+
     $responseType = new ResponseType('json');
+
     $service = new \lib\StringProcessing\StringProcessing($request, $sourceType, $responseType);
+
     $service->process();
 
