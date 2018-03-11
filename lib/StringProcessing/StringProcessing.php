@@ -52,7 +52,7 @@ class StringProcessing
         $answer = $job->process();
 
         $responseFabric = new ResponseFabric();
-        $jsonResponse = $responseFabric->getResponse($this->responseType);
-        return $jsonResponse->getFormat($answer);
+        $response = $responseFabric->getResponse($this->responseType);
+        return $response->getFormat($answer);
     }
 }
